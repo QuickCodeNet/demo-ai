@@ -1,0 +1,1 @@
+﻿SELECT * FROM [TopicWorkflows] WHERE [KafkaEventsTopicName] = @kafkaEventsTopicName

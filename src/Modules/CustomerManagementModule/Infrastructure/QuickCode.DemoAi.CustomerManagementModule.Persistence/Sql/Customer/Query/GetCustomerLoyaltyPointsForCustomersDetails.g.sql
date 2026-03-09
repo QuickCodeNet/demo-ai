@@ -1,0 +1,1 @@
+﻿SELECT * FROM [CUSTOMER_LOYALTY_POINTS] WHERE [CUSTOMER_ID] = @customersId AND [ID] = @customerLoyaltyPointsId

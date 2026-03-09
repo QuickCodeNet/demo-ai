@@ -1,0 +1,1 @@
+﻿SELECT * FROM [AspNetUsers] WHERE [PermissionGroupName] = @permissionGroupsName AND [Id] = @aspNetUsersId

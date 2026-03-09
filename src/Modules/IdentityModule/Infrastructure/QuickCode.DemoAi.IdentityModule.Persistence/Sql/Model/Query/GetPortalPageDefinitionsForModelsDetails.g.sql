@@ -1,0 +1,1 @@
+﻿SELECT * FROM [PortalPageDefinitions] WHERE [ModelName] = @modelsName AND [Key] = @portalPageDefinitionsKey

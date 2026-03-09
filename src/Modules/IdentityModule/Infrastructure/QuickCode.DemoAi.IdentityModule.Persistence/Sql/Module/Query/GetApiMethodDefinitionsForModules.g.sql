@@ -1,0 +1,1 @@
+﻿SELECT * FROM [ApiMethodDefinitions] WHERE [ModuleName] = @modulesName

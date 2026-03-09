@@ -1,0 +1,1 @@
+﻿SELECT * FROM [Models] WHERE [ModuleName] = @modulesName AND [Name] = @modelsName

@@ -1,0 +1,1 @@
+﻿SELECT * FROM [APPOINTMENT_REMINDERS] WHERE [APPOINTMENT_ID] = @appointmentsId AND [ID] = @appointmentRemindersId

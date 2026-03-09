@@ -1,0 +1,148 @@
+{
+  "ReverseProxy": {
+    "clusters": {
+      "auth-api": {
+        "clusterId": "auth-api",
+        "destinations": {
+          "destination1": {
+            "address": "http://quickcode-demo-ai-identity-module-api"
+          }
+        }
+      },
+      "identity-module-api": {
+        "clusterId": "identity-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "http://quickcode-demo-ai-identity-module-api"
+          }
+        }
+      },
+      "appointment-management-module-api": {
+        "clusterId": "appointment-management-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "http://quickcode-demo-ai-appointment-management-module-api"
+          }
+        }
+      },
+      "customer-management-module-api": {
+        "clusterId": "customer-management-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "http://quickcode-demo-ai-customer-management-module-api"
+          }
+        }
+      },
+      "hairdresser-management-module-api": {
+        "clusterId": "hairdresser-management-module-api",
+        "destinations": {
+          "destination1": {
+            "address": "http://quickcode-demo-ai-hairdresser-management-module-api"
+          }
+        }
+      }
+    },
+    "routes": {
+      "auth": {
+        "routeId": "auth",
+        "clusterId": "auth-api",
+        "authorizationPolicy": null,
+        "match": {
+          "path": "api/auth/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-ai-gateway-821209474183.europe-west1.run.app",
+            "demo-ai-gateway",
+            "quickcode-demo-ai-gateway-api",
+            "demo-ai-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/auth/{**catch-all}"
+          }
+        ]
+      },
+      "identity-module": {
+        "routeId": "identity-module",
+        "clusterId": "identity-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/identity-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-ai-gateway-821209474183.europe-west1.run.app",
+            "demo-ai-gateway",
+            "quickcode-demo-ai-gateway-api",
+            "demo-ai-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/identity-module/{**catch-all}"
+          }
+        ]
+      },
+      "appointment-management-module": {
+        "routeId": "appointment-management-module",
+        "clusterId": "appointment-management-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/appointment-management-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-ai-gateway-821209474183.europe-west1.run.app",
+            "demo-ai-gateway",
+            "quickcode-demo-ai-gateway-api",
+            "demo-ai-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/appointment-management-module/{**catch-all}"
+          }
+        ]
+      },
+      "customer-management-module": {
+        "routeId": "customer-management-module",
+        "clusterId": "customer-management-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/customer-management-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-ai-gateway-821209474183.europe-west1.run.app",
+            "demo-ai-gateway",
+            "quickcode-demo-ai-gateway-api",
+            "demo-ai-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/customer-management-module/{**catch-all}"
+          }
+        ]
+      },
+      "hairdresser-management-module": {
+        "routeId": "hairdresser-management-module",
+        "clusterId": "hairdresser-management-module-api",
+        "authorizationPolicy": "QuickCodeGatewayPolicy",
+        "match": {
+          "path": "api/hairdresser-management-module/{**catch-all}",
+          "hosts": [
+            "localhost:6060",
+            "demo-ai-gateway-821209474183.europe-west1.run.app",
+            "demo-ai-gateway",
+            "quickcode-demo-ai-gateway-api",
+            "demo-ai-gateway.quickcode.net"
+          ]
+        },
+        "transforms": [
+          {
+            "PathPattern": "api/hairdresser-management-module/{**catch-all}"
+          }
+        ]
+      }
+    }
+  }
+}

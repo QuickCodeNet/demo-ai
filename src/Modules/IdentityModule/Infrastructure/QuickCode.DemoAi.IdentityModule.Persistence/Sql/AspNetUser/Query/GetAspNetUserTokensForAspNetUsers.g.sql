@@ -1,0 +1,1 @@
+﻿SELECT * FROM [AspNetUserTokens] WHERE [UserId] = @aspNetUsersId

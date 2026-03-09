@@ -1,0 +1,1 @@
+﻿SELECT * FROM [SERVICE_PRICES] WHERE [SERVICE_ID] = @servicesId AND [ID] = @servicePricesId

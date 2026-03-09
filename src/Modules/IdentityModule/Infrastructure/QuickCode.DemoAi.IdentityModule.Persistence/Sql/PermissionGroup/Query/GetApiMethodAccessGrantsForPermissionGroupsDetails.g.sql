@@ -1,0 +1,1 @@
+﻿SELECT * FROM [ApiMethodAccessGrants] WHERE [PermissionGroupName] = @permissionGroupsName AND [PermissionGroupName] = @apiMethodAccessGrantsPermissionGroupName

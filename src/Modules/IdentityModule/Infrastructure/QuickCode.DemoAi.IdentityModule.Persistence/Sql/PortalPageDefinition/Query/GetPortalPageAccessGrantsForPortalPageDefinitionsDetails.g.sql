@@ -1,0 +1,1 @@
+﻿SELECT * FROM [PortalPageAccessGrants] WHERE [PortalPageDefinitionKey] = @portalPageDefinitionsKey AND [PermissionGroupName] = @portalPageAccessGrantsPermissionGroupName

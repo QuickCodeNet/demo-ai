@@ -1,0 +1,1 @@
+﻿SELECT * FROM [AspNetUserClaims] WHERE [UserId] = @aspNetUsersId AND [Id] = @aspNetUserClaimsId

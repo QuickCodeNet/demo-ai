@@ -1,0 +1,119 @@
+services:
+  demo-ai-pg-data:
+    container_name: "demo-ai-pg-data"
+    image: postgres:18
+
+  demo-ai-sql-data:
+    container_name: "demo-ai-sql-data"
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    
+  demo-ai-mysql-data:
+    container_name: "demo-ai-mysql-data"
+    image: mysql:8.3
+
+  demo-ai-elasticsearch:
+    container_name: demo-ai-elasticsearch
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+
+  demo-ai-kibana:
+    container_name: demo-ai-kibana
+    image: docker.elastic.co/kibana/kibana:8.11.0
+
+  quickcode-demo-ai-gateway-api:
+    container_name: "quickcode-demo-ai-gateway-api"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-ai-gateway-api
+    build:
+      context: .
+      dockerfile: Presentation/QuickCode.DemoAi.Gateway/Dockerfile
+
+  quickcode-demo-ai-identity-module-api:
+    container_name: "quickcode-demo-ai-identity-module-api"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-ai-identity-module-api
+    build:
+      context: . 
+      dockerfile: Modules/IdentityModule/Presentation/QuickCode.DemoAi.IdentityModule.Api/Dockerfile
+    depends_on:
+      - demo-ai-sql-data
+      - demo-ai-pg-data
+      
+
+  quickcode-demo-ai-appointment-management-module-api:
+    container_name: "quickcode-demo-ai-appointment-management-module-api"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-ai-appointment-management-module-api
+    build:
+      context: . 
+      dockerfile: Modules/AppointmentManagementModule/Presentation/QuickCode.DemoAi.AppointmentManagementModule.Api/Dockerfile
+    depends_on:
+      - demo-ai-sql-data
+      - demo-ai-pg-data
+      
+
+  quickcode-demo-ai-customer-management-module-api:
+    container_name: "quickcode-demo-ai-customer-management-module-api"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-ai-customer-management-module-api
+    build:
+      context: . 
+      dockerfile: Modules/CustomerManagementModule/Presentation/QuickCode.DemoAi.CustomerManagementModule.Api/Dockerfile
+    depends_on:
+      - demo-ai-sql-data
+      - demo-ai-pg-data
+      
+
+  quickcode-demo-ai-hairdresser-management-module-api:
+    container_name: "quickcode-demo-ai-hairdresser-management-module-api"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-ai-hairdresser-management-module-api
+    build:
+      context: . 
+      dockerfile: Modules/HairdresserManagementModule/Presentation/QuickCode.DemoAi.HairdresserManagementModule.Api/Dockerfile
+    depends_on:
+      - demo-ai-sql-data
+      - demo-ai-pg-data
+      
+
+#[-WEB-]
+  
+  demo-ai-zookeeper:
+    image: confluentinc/cp-zookeeper:7.5.0
+    container_name: demo-ai-zookeeper
+    ports:
+      - "${ZOOKEEPER_PORT:-2181}:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  demo-ai-kafka:
+    image: confluentinc/cp-kafka:7.5.0
+    container_name: demo-ai-kafka
+    depends_on:
+      - demo-ai-zookeeper
+    ports:
+      - "${KAFKA_PORT:-9092}:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: demo-ai-zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://demo-ai-kafka:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+
+  demo-ai-kafdrop:
+    image: obsidiandynamics/kafdrop:latest
+    container_name: demo-ai-kafdrop
+    ports:
+      - "${KAFDROP_PORT:-9000}:9000"
+    depends_on:
+      - demo-ai-kafka
+    environment:
+      KAFKA_BROKERCONNECT: demo-ai-kafka:9092
+        
+  quickcode-demo-ai-portal:
+    container_name: "quickcode-demo-ai-portal"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-ai-portal
+    build:
+      context: .
+      dockerfile: Presentation/QuickCode.DemoAi.Portal/Dockerfile
+      
+  quickcode-demo-ai-event-listener-service:
+    container_name: "quickcode-demo-ai-event-listener-service"
+    image: ${DOCKER_REGISTRY-}quickcode-demo-ai-event-listener-service
+    build:
+      context: .
+      dockerfile: Services/QuickCode.DemoAi.EventListenerService/Dockerfile

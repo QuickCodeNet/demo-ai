@@ -1,0 +1,1 @@
+﻿SELECT * FROM [PortalPageDefinitions] WHERE [ModuleName] = @modulesName

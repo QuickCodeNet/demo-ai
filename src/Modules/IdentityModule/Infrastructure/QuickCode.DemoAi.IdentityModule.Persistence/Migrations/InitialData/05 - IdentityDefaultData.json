@@ -1,0 +1,498 @@
+﻿{
+  "PortalMenus": [
+    {
+      "Key": "IdentityModule_IdentityModule",
+      "Name": "IdentityModule",
+      "Text": "IdentityModule",
+      "Tooltip": "IdentityModule",
+      "ActionName": "",
+      "OrderNo": 100,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_ApiMethodAccessGrants",
+      "Name": "ApiMethodAccessGrants",
+      "Text": "ApiMethodAccessGrants",
+      "Tooltip": "ApiMethodAccessGrants",
+      "ActionName": "/IdentityModuleApiMethodAccessGrants/List",
+      "OrderNo": 100,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_ApiMethodDefinitions",
+      "Name": "ApiMethodDefinitions",
+      "Text": "ApiMethodDefinitions",
+      "Tooltip": "ApiMethodDefinitions",
+      "ActionName": "/IdentityModuleApiMethodDefinitions/List",
+      "OrderNo": 101,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetRoles",
+      "Name": "AspNetRoles",
+      "Text": "AspNetRoles",
+      "Tooltip": "AspNetRoles",
+      "ActionName": "/IdentityModuleAspNetRoles/List",
+      "OrderNo": 102,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetRoleClaims",
+      "Name": "AspNetRoleClaims",
+      "Text": "AspNetRoleClaims",
+      "Tooltip": "AspNetRoleClaims",
+      "ActionName": "/IdentityModuleAspNetRoleClaims/List",
+      "OrderNo": 103,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUsers",
+      "Name": "AspNetUsers",
+      "Text": "AspNetUsers",
+      "Tooltip": "AspNetUsers",
+      "ActionName": "/IdentityModuleAspNetUsers/List",
+      "OrderNo": 104,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserClaims",
+      "Name": "AspNetUserClaims",
+      "Text": "AspNetUserClaims",
+      "Tooltip": "AspNetUserClaims",
+      "ActionName": "/IdentityModuleAspNetUserClaims/List",
+      "OrderNo": 105,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserLogins",
+      "Name": "AspNetUserLogins",
+      "Text": "AspNetUserLogins",
+      "Tooltip": "AspNetUserLogins",
+      "ActionName": "/IdentityModuleAspNetUserLogins/List",
+      "OrderNo": 106,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserRoles",
+      "Name": "AspNetUserRoles",
+      "Text": "AspNetUserRoles",
+      "Tooltip": "AspNetUserRoles",
+      "ActionName": "/IdentityModuleAspNetUserRoles/List",
+      "OrderNo": 107,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AspNetUserTokens",
+      "Name": "AspNetUserTokens",
+      "Text": "AspNetUserTokens",
+      "Tooltip": "AspNetUserTokens",
+      "ActionName": "/IdentityModuleAspNetUserTokens/List",
+      "OrderNo": 108,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/IdentityModuleAuditLogs/List",
+      "OrderNo": 109,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_ColumnTypes",
+      "Name": "ColumnTypes",
+      "Text": "ColumnTypes",
+      "Tooltip": "ColumnTypes",
+      "ActionName": "/IdentityModuleColumnTypes/List",
+      "OrderNo": 110,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_KafkaEvents",
+      "Name": "KafkaEvents",
+      "Text": "KafkaEvents",
+      "Tooltip": "KafkaEvents",
+      "ActionName": "/IdentityModuleKafkaEvents/List",
+      "OrderNo": 111,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_Models",
+      "Name": "Models",
+      "Text": "Models",
+      "Tooltip": "Models",
+      "ActionName": "/IdentityModuleModels/List",
+      "OrderNo": 112,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_Modules",
+      "Name": "Modules",
+      "Text": "Modules",
+      "Tooltip": "Modules",
+      "ActionName": "/IdentityModuleModules/List",
+      "OrderNo": 113,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PermissionGroups",
+      "Name": "PermissionGroups",
+      "Text": "PermissionGroups",
+      "Tooltip": "PermissionGroups",
+      "ActionName": "/IdentityModulePermissionGroups/List",
+      "OrderNo": 114,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalMenus",
+      "Name": "PortalMenus",
+      "Text": "PortalMenus",
+      "Tooltip": "PortalMenus",
+      "ActionName": "/IdentityModulePortalMenus/List",
+      "OrderNo": 115,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalPageAccessGrants",
+      "Name": "PortalPageAccessGrants",
+      "Text": "PortalPageAccessGrants",
+      "Tooltip": "PortalPageAccessGrants",
+      "ActionName": "/IdentityModulePortalPageAccessGrants/List",
+      "OrderNo": 116,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_PortalPageDefinitions",
+      "Name": "PortalPageDefinitions",
+      "Text": "PortalPageDefinitions",
+      "Tooltip": "PortalPageDefinitions",
+      "ActionName": "/IdentityModulePortalPageDefinitions/List",
+      "OrderNo": 117,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_RefreshTokens",
+      "Name": "RefreshTokens",
+      "Text": "RefreshTokens",
+      "Tooltip": "RefreshTokens",
+      "ActionName": "/IdentityModuleRefreshTokens/List",
+      "OrderNo": 118,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_TableComboboxSettings",
+      "Name": "TableComboboxSettings",
+      "Text": "TableComboboxSettings",
+      "Tooltip": "TableComboboxSettings",
+      "ActionName": "/IdentityModuleTableComboboxSettings/List",
+      "OrderNo": 119,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "IdentityModule_TopicWorkflows",
+      "Name": "TopicWorkflows",
+      "Text": "TopicWorkflows",
+      "Tooltip": "TopicWorkflows",
+      "ActionName": "/IdentityModuleTopicWorkflows/List",
+      "OrderNo": 120,
+      "ParentName": "IdentityModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_AppointmentManagementModule",
+      "Name": "AppointmentManagementModule",
+      "Text": "AppointmentManagementModule",
+      "Tooltip": "AppointmentManagementModule",
+      "ActionName": "",
+      "OrderNo": 121,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_Appointments",
+      "Name": "Appointments",
+      "Text": "Appointments",
+      "Tooltip": "Appointments",
+      "ActionName": "/AppointmentManagementModuleAppointments/List",
+      "OrderNo": 121,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_AppointmentCharges",
+      "Name": "AppointmentCharges",
+      "Text": "AppointmentCharges",
+      "Tooltip": "AppointmentCharges",
+      "ActionName": "/AppointmentManagementModuleAppointmentCharges/List",
+      "OrderNo": 122,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_AppointmentFeedbacks",
+      "Name": "AppointmentFeedbacks",
+      "Text": "AppointmentFeedbacks",
+      "Tooltip": "AppointmentFeedbacks",
+      "ActionName": "/AppointmentManagementModuleAppointmentFeedbacks/List",
+      "OrderNo": 123,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_AppointmentReminders",
+      "Name": "AppointmentReminders",
+      "Text": "AppointmentReminders",
+      "Tooltip": "AppointmentReminders",
+      "ActionName": "/AppointmentManagementModuleAppointmentReminders/List",
+      "OrderNo": 124,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/AppointmentManagementModuleAuditLogs/List",
+      "OrderNo": 125,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_Holidays",
+      "Name": "Holidays",
+      "Text": "Holidays",
+      "Tooltip": "Holidays",
+      "ActionName": "/AppointmentManagementModuleHolidays/List",
+      "OrderNo": 126,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "AppointmentManagementModule_WaitingLists",
+      "Name": "WaitingLists",
+      "Text": "WaitingLists",
+      "Tooltip": "WaitingLists",
+      "ActionName": "/AppointmentManagementModuleWaitingLists/List",
+      "OrderNo": 127,
+      "ParentName": "AppointmentManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_CustomerManagementModule",
+      "Name": "CustomerManagementModule",
+      "Text": "CustomerManagementModule",
+      "Tooltip": "CustomerManagementModule",
+      "ActionName": "",
+      "OrderNo": 128,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/CustomerManagementModuleAuditLogs/List",
+      "OrderNo": 128,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_Customers",
+      "Name": "Customers",
+      "Text": "Customers",
+      "Tooltip": "Customers",
+      "ActionName": "/CustomerManagementModuleCustomers/List",
+      "OrderNo": 129,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_CustomerAddresses",
+      "Name": "CustomerAddresses",
+      "Text": "CustomerAddresses",
+      "Tooltip": "CustomerAddresses",
+      "ActionName": "/CustomerManagementModuleCustomerAddresses/List",
+      "OrderNo": 130,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_CustomerLoyaltyPoints",
+      "Name": "CustomerLoyaltyPoints",
+      "Text": "CustomerLoyaltyPoints",
+      "Tooltip": "CustomerLoyaltyPoints",
+      "ActionName": "/CustomerManagementModuleCustomerLoyaltyPoints/List",
+      "OrderNo": 131,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_CustomerNotes",
+      "Name": "CustomerNotes",
+      "Text": "CustomerNotes",
+      "Tooltip": "CustomerNotes",
+      "ActionName": "/CustomerManagementModuleCustomerNotes/List",
+      "OrderNo": 132,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_CustomerPreferences",
+      "Name": "CustomerPreferences",
+      "Text": "CustomerPreferences",
+      "Tooltip": "CustomerPreferences",
+      "ActionName": "/CustomerManagementModuleCustomerPreferences/List",
+      "OrderNo": 133,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "CustomerManagementModule_LoyaltyPrograms",
+      "Name": "LoyaltyPrograms",
+      "Text": "LoyaltyPrograms",
+      "Tooltip": "LoyaltyPrograms",
+      "ActionName": "/CustomerManagementModuleLoyaltyPrograms/List",
+      "OrderNo": 134,
+      "ParentName": "CustomerManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_HairdresserManagementModule",
+      "Name": "HairdresserManagementModule",
+      "Text": "HairdresserManagementModule",
+      "Tooltip": "HairdresserManagementModule",
+      "ActionName": "",
+      "OrderNo": 135,
+      "ParentName": "HairdresserManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_AuditLogs",
+      "Name": "AuditLogs",
+      "Text": "AuditLogs",
+      "Tooltip": "AuditLogs",
+      "ActionName": "/HairdresserManagementModuleAuditLogs/List",
+      "OrderNo": 135,
+      "ParentName": "HairdresserManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_Hairdressers",
+      "Name": "Hairdressers",
+      "Text": "Hairdressers",
+      "Tooltip": "Hairdressers",
+      "ActionName": "/HairdresserManagementModuleHairdressers/List",
+      "OrderNo": 136,
+      "ParentName": "HairdresserManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_HairdresserAvailabilities",
+      "Name": "HairdresserAvailabilities",
+      "Text": "HairdresserAvailabilities",
+      "Tooltip": "HairdresserAvailabilities",
+      "ActionName": "/HairdresserManagementModuleHairdresserAvailabilities/List",
+      "OrderNo": 137,
+      "ParentName": "HairdresserManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_HairdresserNotes",
+      "Name": "HairdresserNotes",
+      "Text": "HairdresserNotes",
+      "Tooltip": "HairdresserNotes",
+      "ActionName": "/HairdresserManagementModuleHairdresserNotes/List",
+      "OrderNo": 138,
+      "ParentName": "HairdresserManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_SalonEquipments",
+      "Name": "SalonEquipments",
+      "Text": "SalonEquipments",
+      "Tooltip": "SalonEquipments",
+      "ActionName": "/HairdresserManagementModuleSalonEquipments/List",
+      "OrderNo": 139,
+      "ParentName": "HairdresserManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_Services",
+      "Name": "Services",
+      "Text": "Services",
+      "Tooltip": "Services",
+      "ActionName": "/HairdresserManagementModuleServices/List",
+      "OrderNo": 140,
+      "ParentName": "HairdresserManagementModule"
+    },
+    {
+      "Key": "HairdresserManagementModule_ServicePrices",
+      "Name": "ServicePrices",
+      "Text": "ServicePrices",
+      "Tooltip": "ServicePrices",
+      "ActionName": "/HairdresserManagementModuleServicePrices/List",
+      "OrderNo": 141,
+      "ParentName": "HairdresserManagementModule"
+    }
+  ],
+  "TableComboboxSettings": [
+    {
+      "TableName": "ApiMethodDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "HttpMethod, UrlPath",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "AspNetRole",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "AspNetUser",
+      "IdColumn": "Id",
+      "TextColumns": "Id, FirstName, LastName",
+      "StringFormat": "{0} - {1} {2}"
+    },
+    {
+      "TableName": "KafkaEvent",
+      "IdColumn": "TopicName",
+      "TextColumns": "TopicName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Module",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Model",
+      "IdColumn": "Name",
+      "TextColumns": "Name, ModuleName",
+      "StringFormat": "{0} - {1}"
+    },
+    {
+      "TableName": "PermissionGroup",
+      "IdColumn": "Name",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "PortalPageDefinition",
+      "IdColumn": "Key",
+      "TextColumns": "Key",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Appointment",
+      "IdColumn": "Id",
+      "TextColumns": "Notes",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Customer",
+      "IdColumn": "Id",
+      "TextColumns": "FirstName",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "LoyaltyProgram",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Hairdresser",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    },
+    {
+      "TableName": "Service",
+      "IdColumn": "Id",
+      "TextColumns": "Name",
+      "StringFormat": "{0}"
+    }
+  ]
+}

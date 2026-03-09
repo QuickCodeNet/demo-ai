@@ -1,0 +1,1 @@
+﻿SELECT * FROM [HAIRDRESSER_AVAILABILITIES] WHERE [HAIRDRESSER_ID] = @hairdressersId AND [ID] = @hairdresserAvailabilitiesId

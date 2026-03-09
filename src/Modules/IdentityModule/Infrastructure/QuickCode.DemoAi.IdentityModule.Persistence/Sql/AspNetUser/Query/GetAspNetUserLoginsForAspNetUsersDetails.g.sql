@@ -1,0 +1,1 @@
+﻿SELECT * FROM [AspNetUserLogins] WHERE [UserId] = @aspNetUsersId AND [LoginProvider] = @aspNetUserLoginsLoginProvider

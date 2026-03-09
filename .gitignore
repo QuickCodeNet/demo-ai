@@ -1,0 +1,13 @@
+.vs
+bin
+obj
+QuickCode.DemoAi.Api/bin
+QuickCode.DemoAi.Api/obj
+QuickCode.DemoAi.Portal/bin
+QuickCode.DemoAi.Portal/obj
+QuickCode.DemoAi.Web/bin
+QuickCode.DemoAi.Web/obj
+QuickCode.DemoAi.DataLayer/bin
+QuickCode.DemoAi.DataLayer/obj
+.DS_Store
+/src/.idea

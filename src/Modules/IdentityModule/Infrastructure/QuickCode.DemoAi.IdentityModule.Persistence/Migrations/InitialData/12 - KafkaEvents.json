@@ -1,0 +1,799 @@
+﻿{
+"KafkaEvents": [
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulemodulesModulesController",
+    "TopicName": "demo-ai.identity_module.modules_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulemodulesnameModulesController",
+    "TopicName": "demo-ai.identity_module.modules_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodulesnameModulesController",
+    "TopicName": "demo-ai.identity_module.modules_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodelsdeletemodelswithmodulenamemodelmodulenameModelsController",
+    "TopicName": "demo-ai.identity_module.models.delete_models_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulemodelsModelsController",
+    "TopicName": "demo-ai.identity_module.models_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulemodelsnamemodulenameModelsController",
+    "TopicName": "demo-ai.identity_module.models_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulemodelsnamemodulenameModelsController",
+    "TopicName": "demo-ai.identity_module.models_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulepermissiongroupsPermissionGroupsController",
+    "TopicName": "demo-ai.identity_module.permission_groups_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "TopicName": "demo-ai.identity_module.permission_groups_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulepermissiongroupsnamePermissionGroupsController",
+    "TopicName": "demo-ai.identity_module.permission_groups_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodulenameapimethoddefinitionmodulenameApiMethodDefinitionsController",
+    "TopicName": "demo-ai.identity_module.api_method_definitions.delete_api_method_definitions_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionsdeleteapimethoddefinitionswithmodelnameapimethoddefinitionmodelnameApiMethodDefinitionsController",
+    "TopicName": "demo-ai.identity_module.api_method_definitions.delete_api_method_definitions_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethoddefinitionsApiMethodDefinitionsController",
+    "TopicName": "demo-ai.identity_module.api_method_definitions_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "TopicName": "demo-ai.identity_module.api_method_definitions_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethoddefinitionskeyApiMethodDefinitionsController",
+    "TopicName": "demo-ai.identity_module.api_method_definitions_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodulenameportalpagedefinitionmodulenamePortalPageDefinitionsController",
+    "TopicName": "demo-ai.identity_module.portal_page_definitions.delete_portal_page_definitions_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionsdeleteportalpagedefinitionswithmodelnameportalpagedefinitionmodelnamePortalPageDefinitionsController",
+    "TopicName": "demo-ai.identity_module.portal_page_definitions.delete_portal_page_definitions_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpagedefinitionsPortalPageDefinitionsController",
+    "TopicName": "demo-ai.identity_module.portal_page_definitions_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "TopicName": "demo-ai.identity_module.portal_page_definitions_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpagedefinitionskeyPortalPageDefinitionsController",
+    "TopicName": "demo-ai.identity_module.portal_page_definitions_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethodaccessgrantsclearapimethodaccessgrantsApiMethodAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.api_method_access_grants.clear_api_method_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethodaccessgrantsApiMethodAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.api_method_access_grants_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.api_method_access_grants_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleapimethodaccessgrantspermissiongroupnameapimethoddefinitionkeyApiMethodAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.api_method_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpageaccessgrantsclearportalpageaccessgrantsPortalPageAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.portal_page_access_grants.clear_portal_page_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpageaccessgrantsPortalPageAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.portal_page_access_grants_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.portal_page_access_grants_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalpageaccessgrantspermissiongroupnameportalpagedefinitionkeypageactionPortalPageAccessGrantsController",
+    "TopicName": "demo-ai.identity_module.portal_page_access_grants_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodulenameportalmenukeyPortalMenusController",
+    "TopicName": "demo-ai.identity_module.portal_menus.delete_portal_menu_items_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenusdeleteportalmenuitemswithmodelnameportalmenukeyportalmenunamePortalMenusController",
+    "TopicName": "demo-ai.identity_module.portal_menus.delete_portal_menu_items_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalmenusPortalMenusController",
+    "TopicName": "demo-ai.identity_module.portal_menus_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleportalmenuskeyPortalMenusController",
+    "TopicName": "demo-ai.identity_module.portal_menus_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleportalmenuskeyPortalMenusController",
+    "TopicName": "demo-ai.identity_module.portal_menus_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulecolumntypesColumnTypesController",
+    "TopicName": "demo-ai.identity_module.column_types_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulecolumntypesidintColumnTypesController",
+    "TopicName": "demo-ai.identity_module.column_types_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulecolumntypesidintColumnTypesController",
+    "TopicName": "demo-ai.identity_module.column_types_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduletablecomboboxsettingsTableComboboxSettingsController",
+    "TopicName": "demo-ai.identity_module.table_combobox_settings_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "TopicName": "demo-ai.identity_module.table_combobox_settings_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduletablecomboboxsettingstablenameTableComboboxSettingsController",
+    "TopicName": "demo-ai.identity_module.table_combobox_settings_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodulenameapimethoddefinitionsmodulenameKafkaEventsController",
+    "TopicName": "demo-ai.identity_module.kafka_events.clean_kafka_events_with_module_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventscleankafkaeventswithmodelnameapimethoddefinitionsmodelnameKafkaEventsController",
+    "TopicName": "demo-ai.identity_module.kafka_events.clean_kafka_events_with_model_name_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulekafkaeventsKafkaEventsController",
+    "TopicName": "demo-ai.identity_module.kafka_events_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "TopicName": "demo-ai.identity_module.kafka_events_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulekafkaeventstopicnameKafkaEventsController",
+    "TopicName": "demo-ai.identity_module.kafka_events_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduletopicworkflowsTopicWorkflowsController",
+    "TopicName": "demo-ai.identity_module.topic_workflows_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "TopicName": "demo-ai.identity_module.topic_workflows_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduletopicworkflowsidintTopicWorkflowsController",
+    "TopicName": "demo-ai.identity_module.topic_workflows_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetrolesAspNetRolesController",
+    "TopicName": "demo-ai.identity_module.asp_net_roles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "TopicName": "demo-ai.identity_module.asp_net_roles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetrolesidAspNetRolesController",
+    "TopicName": "demo-ai.identity_module.asp_net_roles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetusersAspNetUsersController",
+    "TopicName": "demo-ai.identity_module.asp_net_users_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetusersidAspNetUsersController",
+    "TopicName": "demo-ai.identity_module.asp_net_users_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetusersidAspNetUsersController",
+    "TopicName": "demo-ai.identity_module.asp_net_users_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiidentitymodulerefreshtokensupdaterefreshtokensrefreshtokentokenRefreshTokensController",
+    "TopicName": "demo-ai.identity_module.refresh_tokens.update_refresh_tokens_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymodulerefreshtokensRefreshTokensController",
+    "TopicName": "demo-ai.identity_module.refresh_tokens_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "TopicName": "demo-ai.identity_module.refresh_tokens_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymodulerefreshtokensidintRefreshTokensController",
+    "TopicName": "demo-ai.identity_module.refresh_tokens_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetroleclaimsAspNetRoleClaimsController",
+    "TopicName": "demo-ai.identity_module.asp_net_role_claims_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "TopicName": "demo-ai.identity_module.asp_net_role_claims_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetroleclaimsidintAspNetRoleClaimsController",
+    "TopicName": "demo-ai.identity_module.asp_net_role_claims_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserclaimsAspNetUserClaimsController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_claims_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_claims_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserclaimsidintAspNetUserClaimsController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_claims_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserloginsAspNetUserLoginsController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_logins_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_logins_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserloginsloginproviderproviderkeyAspNetUserLoginsController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_logins_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetuserrolesAspNetUserRolesController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_roles_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_roles_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetuserrolesuseridroleidAspNetUserRolesController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_roles_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleaspnetusertokensAspNetUserTokensController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_tokens_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_tokens_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleaspnetusertokensuseridAspNetUserTokensController",
+    "TopicName": "demo-ai.identity_module.asp_net_user_tokens_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleauditlogsAuditLogsController",
+    "TopicName": "demo-ai.identity_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiidentitymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.identity_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiidentitymoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.identity_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiappointmentmanagementmoduleappointmentsconfirmappointmentidintAppointmentsController",
+    "TopicName": "demo-ai.appointment_management_module.appointments.confirm_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiappointmentmanagementmoduleappointmentscancelappointmentidintAppointmentsController",
+    "TopicName": "demo-ai.appointment_management_module.appointments.cancel_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiappointmentmanagementmoduleappointmentsAppointmentsController",
+    "TopicName": "demo-ai.appointment_management_module.appointments_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiappointmentmanagementmoduleappointmentsidintAppointmentsController",
+    "TopicName": "demo-ai.appointment_management_module.appointments_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiappointmentmanagementmoduleappointmentsidintAppointmentsController",
+    "TopicName": "demo-ai.appointment_management_module.appointments_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiappointmentmanagementmoduleappointmentfeedbacksAppointmentFeedbacksController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_feedbacks_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiappointmentmanagementmoduleappointmentfeedbacksidintAppointmentFeedbacksController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_feedbacks_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiappointmentmanagementmoduleappointmentfeedbacksidintAppointmentFeedbacksController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_feedbacks_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapiappointmentmanagementmoduleappointmentremindersmarksentappointmentreminderidintAppointmentRemindersController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_reminders.mark_sent_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiappointmentmanagementmoduleappointmentremindersAppointmentRemindersController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_reminders_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiappointmentmanagementmoduleappointmentremindersidintAppointmentRemindersController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_reminders_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiappointmentmanagementmoduleappointmentremindersidintAppointmentRemindersController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_reminders_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiappointmentmanagementmodulewaitinglistsWaitingListsController",
+    "TopicName": "demo-ai.appointment_management_module.waiting_lists_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiappointmentmanagementmodulewaitinglistsidintWaitingListsController",
+    "TopicName": "demo-ai.appointment_management_module.waiting_lists_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiappointmentmanagementmodulewaitinglistsidintWaitingListsController",
+    "TopicName": "demo-ai.appointment_management_module.waiting_lists_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiappointmentmanagementmoduleholidaysHolidaysController",
+    "TopicName": "demo-ai.appointment_management_module.holidays_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiappointmentmanagementmoduleholidaysidintHolidaysController",
+    "TopicName": "demo-ai.appointment_management_module.holidays_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiappointmentmanagementmoduleholidaysidintHolidaysController",
+    "TopicName": "demo-ai.appointment_management_module.holidays_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiappointmentmanagementmoduleappointmentchargesAppointmentChargesController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_charges_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiappointmentmanagementmoduleappointmentchargesidintAppointmentChargesController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_charges_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiappointmentmanagementmoduleappointmentchargesidintAppointmentChargesController",
+    "TopicName": "demo-ai.appointment_management_module.appointment_charges_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiappointmentmanagementmoduleauditlogsAuditLogsController",
+    "TopicName": "demo-ai.appointment_management_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapiappointmentmanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.appointment_management_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapiappointmentmanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.appointment_management_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicustomermanagementmodulecustomersactivatecustomeridintCustomersController",
+    "TopicName": "demo-ai.customer_management_module.customers.activate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicustomermanagementmodulecustomersdeactivatecustomeridintCustomersController",
+    "TopicName": "demo-ai.customer_management_module.customers.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicustomermanagementmodulecustomersCustomersController",
+    "TopicName": "demo-ai.customer_management_module.customers_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicustomermanagementmodulecustomersidintCustomersController",
+    "TopicName": "demo-ai.customer_management_module.customers_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicustomermanagementmodulecustomersidintCustomersController",
+    "TopicName": "demo-ai.customer_management_module.customers_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapicustomermanagementmodulecustomeraddressessetdefaultcustomeraddressidintCustomerAddressesController",
+    "TopicName": "demo-ai.customer_management_module.customer_addresses.set_default_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicustomermanagementmodulecustomeraddressesCustomerAddressesController",
+    "TopicName": "demo-ai.customer_management_module.customer_addresses_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicustomermanagementmodulecustomeraddressesidintCustomerAddressesController",
+    "TopicName": "demo-ai.customer_management_module.customer_addresses_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicustomermanagementmodulecustomeraddressesidintCustomerAddressesController",
+    "TopicName": "demo-ai.customer_management_module.customer_addresses_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicustomermanagementmodulecustomernotesCustomerNotesController",
+    "TopicName": "demo-ai.customer_management_module.customer_notes_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicustomermanagementmodulecustomernotesidintCustomerNotesController",
+    "TopicName": "demo-ai.customer_management_module.customer_notes_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicustomermanagementmodulecustomernotesidintCustomerNotesController",
+    "TopicName": "demo-ai.customer_management_module.customer_notes_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicustomermanagementmodulecustomerpreferencesCustomerPreferencesController",
+    "TopicName": "demo-ai.customer_management_module.customer_preferences_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicustomermanagementmodulecustomerpreferencesidintCustomerPreferencesController",
+    "TopicName": "demo-ai.customer_management_module.customer_preferences_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicustomermanagementmodulecustomerpreferencesidintCustomerPreferencesController",
+    "TopicName": "demo-ai.customer_management_module.customer_preferences_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicustomermanagementmoduleloyaltyprogramsLoyaltyProgramsController",
+    "TopicName": "demo-ai.customer_management_module.loyalty_programs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicustomermanagementmoduleloyaltyprogramsidintLoyaltyProgramsController",
+    "TopicName": "demo-ai.customer_management_module.loyalty_programs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicustomermanagementmoduleloyaltyprogramsidintLoyaltyProgramsController",
+    "TopicName": "demo-ai.customer_management_module.loyalty_programs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicustomermanagementmodulecustomerloyaltypointsCustomerLoyaltyPointsController",
+    "TopicName": "demo-ai.customer_management_module.customer_loyalty_points_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicustomermanagementmodulecustomerloyaltypointsidintCustomerLoyaltyPointsController",
+    "TopicName": "demo-ai.customer_management_module.customer_loyalty_points_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicustomermanagementmodulecustomerloyaltypointsidintCustomerLoyaltyPointsController",
+    "TopicName": "demo-ai.customer_management_module.customer_loyalty_points_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapicustomermanagementmoduleauditlogsAuditLogsController",
+    "TopicName": "demo-ai.customer_management_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapicustomermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.customer_management_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapicustomermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.customer_management_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapihairdressermanagementmodulehairdressersactivatehairdresseridintHairdressersController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdressers.activate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapihairdressermanagementmodulehairdressersdeactivatehairdresseridintHairdressersController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdressers.deactivate_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapihairdressermanagementmodulehairdressersHairdressersController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdressers_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapihairdressermanagementmodulehairdressersidintHairdressersController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdressers_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapihairdressermanagementmodulehairdressersidintHairdressersController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdressers_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapihairdressermanagementmoduleservicesupdatepriceserviceidintServicesController",
+    "TopicName": "demo-ai.hairdresser_management_module.services.update_price_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapihairdressermanagementmoduleservicesServicesController",
+    "TopicName": "demo-ai.hairdresser_management_module.services_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapihairdressermanagementmoduleservicesidintServicesController",
+    "TopicName": "demo-ai.hairdresser_management_module.services_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapihairdressermanagementmoduleservicesidintServicesController",
+    "TopicName": "demo-ai.hairdresser_management_module.services_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapihairdressermanagementmodulehairdresseravailabilitiesHairdresserAvailabilitiesController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdresser_availabilities_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapihairdressermanagementmodulehairdresseravailabilitiesidintHairdresserAvailabilitiesController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdresser_availabilities_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapihairdressermanagementmodulehairdresseravailabilitiesidintHairdresserAvailabilitiesController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdresser_availabilities_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapihairdressermanagementmoduleservicepricesServicePricesController",
+    "TopicName": "demo-ai.hairdresser_management_module.service_prices_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapihairdressermanagementmoduleservicepricesidintServicePricesController",
+    "TopicName": "demo-ai.hairdresser_management_module.service_prices_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapihairdressermanagementmoduleservicepricesidintServicePricesController",
+    "TopicName": "demo-ai.hairdresser_management_module.service_prices_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapihairdressermanagementmodulehairdressernotesHairdresserNotesController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdresser_notes_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapihairdressermanagementmodulehairdressernotesidintHairdresserNotesController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdresser_notes_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapihairdressermanagementmodulehairdressernotesidintHairdresserNotesController",
+    "TopicName": "demo-ai.hairdresser_management_module.hairdresser_notes_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PatchapihairdressermanagementmodulesalonequipmentsupdatequantitysalonequipmentidintSalonEquipmentsController",
+    "TopicName": "demo-ai.hairdresser_management_module.salon_equipments.update_quantity_patch",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapihairdressermanagementmodulesalonequipmentsSalonEquipmentsController",
+    "TopicName": "demo-ai.hairdresser_management_module.salon_equipments_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapihairdressermanagementmodulesalonequipmentsidintSalonEquipmentsController",
+    "TopicName": "demo-ai.hairdresser_management_module.salon_equipments_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapihairdressermanagementmodulesalonequipmentsidintSalonEquipmentsController",
+    "TopicName": "demo-ai.hairdresser_management_module.salon_equipments_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapihairdressermanagementmoduleauditlogsAuditLogsController",
+    "TopicName": "demo-ai.hairdresser_management_module.audit_logs_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PutapihairdressermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.hairdresser_management_module.audit_logs_put",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "DeleteapihairdressermanagementmoduleauditlogsidguidAuditLogsController",
+    "TopicName": "demo-ai.hairdresser_management_module.audit_logs_delete",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleportalpagedefinitionsupdateportalpagepermissionPortalPageDefinitionsController",
+    "TopicName": "demo-ai.identity_module.portal_page_definitions.update_portal_page_permission_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiidentitymoduleapimethoddefinitionsupdateapipermissionApiMethodDefinitionsController",
+    "TopicName": "demo-ai.identity_module.api_method_definitions.update_api_permission_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthregisterAuthenticationsController",
+    "TopicName": "demo-ai.auth.register_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthloginAuthenticationsController",
+    "TopicName": "demo-ai.auth.login_post",
+    "IsActive": true
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthvalidateAuthenticationsController",
+    "TopicName": "demo-ai.auth.validate_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthrefreshAuthenticationsController",
+    "TopicName": "demo-ai.auth.refresh_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthresendconfirmationemailAuthenticationsController",
+    "TopicName": "demo-ai.auth.resendconfirmationemail_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthforgotpasswordAuthenticationsController",
+    "TopicName": "demo-ai.auth.forgotpassword_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthresetpasswordAuthenticationsController",
+    "TopicName": "demo-ai.auth.resetpassword_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "Postapiauthmanageuser2faAuthenticationsController",
+    "TopicName": "demo-ai.auth.manage.user2fa_post",
+    "IsActive": false
+  },
+  {
+    "ApiMethodDefinitionKey": "PostapiauthmanageinfoAuthenticationsController",
+    "TopicName": "demo-ai.auth.manage.info_post",
+    "IsActive": false
+  }
+]
+}

@@ -1,0 +1,1 @@
+﻿SELECT * FROM [CUSTOMER_NOTES] WHERE [CUSTOMER_ID] = @customersId AND [ID] = @customerNotesId

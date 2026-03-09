@@ -1,0 +1,1 @@
+﻿SELECT * FROM [APPOINTMENT_CHARGES] WHERE [APPOINTMENT_ID] = @appointmentsId AND [ID] = @appointmentChargesId

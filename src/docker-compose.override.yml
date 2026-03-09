@@ -1,0 +1,141 @@
+services:
+  demo-ai-pg-data:
+    ports:
+      - "${PGSQL_PORT:-5432}:5432"
+    environment:
+      - POSTGRES_USER=docker
+      - POSTGRES_PASSWORD=dockerf
+    volumes:
+      - quickcode-demo-ai-pg-data:/var/lib/postgresql
+  
+  demo-ai-mysql-data:
+    ports:
+      - "${MYSQL_PORT:-3306}:3306"
+    volumes:
+      - quickcode-demo-ai-mysql-data:/var/lib/mysql
+      - "~/sql-scripts/setup.sql:/docker-entrypoint-initdb.d/1.sql"
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=RootDocker!
+      - MYSQL_USER=docker
+      - MYSQL_PASSWORD=dockerf
+
+  demo-ai-sql-data:
+    environment:
+      - MSSQL_SA_PASSWORD=Pass@word
+      - ACCEPT_EULA=Y
+    ports:
+      - "${SQL_PORT:-5433}:1433"
+    volumes:
+      - quickcode-demo-ai-sql-data:/var/opt/mssql
+
+  demo-ai-elasticsearch:
+    environment:
+      - xpack.security.enabled=false
+      - discovery.type=single-node
+    deploy:
+      resources:
+        limits:
+          memory: 1GB
+    ports:
+      - "${ELASTIC_PORT:-9200}:9200"
+    volumes:
+      - quickcode-demo-ai-elasticsearch-data:/usr/share/elasticsearch/data
+    restart: always
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    healthcheck:
+      test: curl -s http://demo-ai-elasticsearch:9200 >/dev/null || exit 1
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  demo-ai-kibana:
+    environment:
+      - ELASTICSEARCH_HOSTS=http://demo-ai-elasticsearch:9200
+    ports:
+      - "${KIBANA_PORT:-5601}:5601"
+    volumes:
+      - quickcode-demo-ai-kibana-data:/usr/share/kibana/data
+    restart: always
+    depends_on:
+      - demo-ai-elasticsearch
+
+  quickcode-demo-ai-gateway-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+    ports:
+      - "${GATEWAY_PORT:-6060}:80"
+
+  quickcode-demo-ai-identity-module-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+      - QUICKCODE_JWT_SECRET_KEY=B6qqABAzL1yiKYKgvehMYXVlWcrANc29X6ieB8cexCMsBIXFnE1Gacf2PXxUK3gU
+    ports:
+      - "6001:80"
+
+
+  quickcode-demo-ai-appointment-management-module-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+      
+    ports:
+      - "6002:80"
+
+
+  quickcode-demo-ai-customer-management-module-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+      
+    ports:
+      - "6003:80"
+
+
+  quickcode-demo-ai-hairdresser-management-module-api:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+      
+    ports:
+      - "6004:80"
+
+
+#[-WEB-]
+  quickcode-demo-ai-portal:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+      - AZURE_ACCOUNT_NAME=quickcodeblobstorage
+      - AZURE_ACCOUNT_KEY=azureAccountKeySecret
+      - AZURE_BLOB_CONTAINER_NAME=images
+    ports:
+      - "${PORTAL_PORT:-6020}:80"
+      
+  quickcode-demo-ai-event-listener-service:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Local
+      - ASPNETCORE_URLS=http://+
+    ports:
+      - "${EVENT_LISTENER_PORT:-6100}:80"
+      
+volumes:
+  quickcode-demo-ai-pg-data:
+    external: false
+    
+  quickcode-demo-ai-mysql-data:
+    external: false
+    
+  quickcode-demo-ai-sql-data:
+    external: false
+    
+  quickcode-demo-ai-elasticsearch-data:
+    external: false
+    
+  quickcode-demo-ai-kibana-data:
+    external: false
