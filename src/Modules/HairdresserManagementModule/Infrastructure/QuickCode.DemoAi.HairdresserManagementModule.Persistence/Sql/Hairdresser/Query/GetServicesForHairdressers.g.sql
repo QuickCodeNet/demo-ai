@@ -1,1 +1,0 @@
-﻿SELECT * FROM [SERVICES] WHERE [HAIRDRESSER_ID] = @hairdressersId

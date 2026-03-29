@@ -1,1 +1,0 @@
-﻿SELECT * FROM [KafkaEvents] WHERE [ApiMethodDefinitionKey] = @apiMethodDefinitionsKey

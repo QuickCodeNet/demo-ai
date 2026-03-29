@@ -1,1 +1,0 @@
-﻿SELECT * FROM [ApiMethodAccessGrants] WHERE [ApiMethodDefinitionKey] = @apiMethodDefinitionsKey

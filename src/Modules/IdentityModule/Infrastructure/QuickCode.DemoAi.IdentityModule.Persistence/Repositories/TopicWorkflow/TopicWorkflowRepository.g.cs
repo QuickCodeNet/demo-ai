@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from topic_workflow in _readContext.TopicWorkflow
-                    where topic_workflow.Id.Equals(id)
-                    select topic_workflow;
+                    from TW in _readContext.TopicWorkflow
+                    where TW.Id.Equals(id)
+                    select TW;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<TopicWorkflowDto>
                 {

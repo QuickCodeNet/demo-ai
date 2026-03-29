@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from audit_log in _readContext.AuditLog
-                    where audit_log.Id.Equals(id)
-                    select audit_log;
+                    from AL in _readContext.AuditLog
+                    where AL.Id.Equals(id)
+                    select AL;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<AuditLogDto>
                 {

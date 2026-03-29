@@ -1,1 +1,0 @@
-﻿SELECT * FROM [ApiMethodDefinitions] WHERE [ModuleName] = @modulesName AND [Key] = @apiMethodDefinitionsKey

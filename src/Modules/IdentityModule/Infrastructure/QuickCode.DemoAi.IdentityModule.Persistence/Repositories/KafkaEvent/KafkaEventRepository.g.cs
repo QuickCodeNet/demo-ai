@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from kafka_event in _readContext.KafkaEvent
-                    where kafka_event.TopicName.Equals(topicName)
-                    select kafka_event;
+                    from KE in _readContext.KafkaEvent
+                    where KE.TopicName.Equals(topicName)
+                    select KE;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<KafkaEventDto>
                 {

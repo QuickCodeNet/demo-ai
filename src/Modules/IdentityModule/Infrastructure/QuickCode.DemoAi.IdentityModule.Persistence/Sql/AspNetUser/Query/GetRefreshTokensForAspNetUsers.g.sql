@@ -1,1 +1,0 @@
-﻿SELECT * FROM [RefreshTokens] WHERE [UserId] = @aspNetUsersId

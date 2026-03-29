@@ -1,4 +1,0 @@
-﻿UPDATE [CUSTOMERS] 
-	SET [IS_ACTIVE] = 1 
-WHERE [IsDeleted] = 0 
-	AND [ID] = @PRM_CUSTOMER_ID

@@ -1,1 +1,0 @@
-﻿SELECT * FROM [AspNetUserRoles] WHERE [RoleId] = @aspNetRolesId AND [UserId] = @aspNetUserRolesUserId

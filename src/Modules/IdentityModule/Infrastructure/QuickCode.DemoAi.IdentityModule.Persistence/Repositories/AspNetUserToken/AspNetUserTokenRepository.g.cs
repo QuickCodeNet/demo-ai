@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from asp_net_user_token in _readContext.AspNetUserToken
-                    where asp_net_user_token.UserId.Equals(userId)
-                    select asp_net_user_token;
+                    from ANUT in _readContext.AspNetUserToken
+                    where ANUT.UserId.Equals(userId)
+                    select ANUT;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<AspNetUserTokenDto>
                 {

@@ -1,1 +1,0 @@
-﻿SELECT * FROM [CUSTOMER_ADDRESSES] WHERE [CUSTOMER_ID] = @customersId AND [ID] = @customerAddressesId

@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from portal_menu in _readContext.PortalMenu
-                    where portal_menu.Key.Equals(key)
-                    select portal_menu;
+                    from PM in _readContext.PortalMenu
+                    where PM.Key.Equals(key)
+                    select PM;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<PortalMenuDto>
                 {

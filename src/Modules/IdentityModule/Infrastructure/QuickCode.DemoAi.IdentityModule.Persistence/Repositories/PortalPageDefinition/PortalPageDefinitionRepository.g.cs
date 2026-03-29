@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from portal_page_definition in _readContext.PortalPageDefinition
-                    where portal_page_definition.Key.Equals(key)
-                    select portal_page_definition;
+                    from PPD in _readContext.PortalPageDefinition
+                    where PPD.Key.Equals(key)
+                    select PPD;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<PortalPageDefinitionDto>
                 {

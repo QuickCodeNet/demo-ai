@@ -1,1 +1,0 @@
-﻿SELECT * FROM [PortalPageDefinitions] WHERE [ModuleName] = @modulesName AND [Key] = @portalPageDefinitionsKey

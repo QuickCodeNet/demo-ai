@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from model in _readContext.Model
-                    where model.Name.Equals(name) && model.ModuleName.Equals(moduleName)
-                    select model;
+                    from M in _readContext.Model
+                    where M.Name.Equals(name) && M.ModuleName.Equals(moduleName)
+                    select M;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<ModelDto>
                 {

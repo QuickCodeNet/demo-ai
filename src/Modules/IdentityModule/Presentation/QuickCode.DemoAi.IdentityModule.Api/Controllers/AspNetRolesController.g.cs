@@ -100,53 +100,5 @@ namespace QuickCode.DemoAi.IdentityModule.Api.Controllers
                 return responseError;
             return Ok(response.Value);
         }
-
-        [HttpGet("{aspNetRoleId}/asp-net-user-role")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetAspNetUserRolesForAspNetRolesResponseDto>))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetAspNetUserRolesForAspNetRolesAsync(string aspNetRolesId)
-        {
-            var response = await mediator.Send(new GetAspNetUserRolesForAspNetRolesQuery(aspNetRolesId));
-            if (HandleResponseError(response, logger, "AspNetRole", $"AspNetRolesId: '{aspNetRolesId}'") is {} responseError)
-                return responseError;
-            return Ok(response.Value);
-        }
-
-        [HttpGet("{aspNetRoleId}/asp-net-user-role/{aspNetUserRoleUserId}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetAspNetUserRolesForAspNetRolesResponseDto))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetAspNetUserRolesForAspNetRolesDetailsAsync(string aspNetRolesId, string aspNetUserRolesUserId)
-        {
-            var response = await mediator.Send(new GetAspNetUserRolesForAspNetRolesDetailsQuery(aspNetRolesId, aspNetUserRolesUserId));
-            if (HandleResponseError(response, logger, "AspNetRole", $"AspNetRolesId: '{aspNetRolesId}', AspNetUserRolesUserId: '{aspNetUserRolesUserId}'") is {} responseError)
-                return responseError;
-            return Ok(response.Value);
-        }
-
-        [HttpGet("{aspNetRoleId}/asp-net-role-claim")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(List<GetAspNetRoleClaimsForAspNetRolesResponseDto>))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetAspNetRoleClaimsForAspNetRolesAsync(string aspNetRolesId)
-        {
-            var response = await mediator.Send(new GetAspNetRoleClaimsForAspNetRolesQuery(aspNetRolesId));
-            if (HandleResponseError(response, logger, "AspNetRole", $"AspNetRolesId: '{aspNetRolesId}'") is {} responseError)
-                return responseError;
-            return Ok(response.Value);
-        }
-
-        [HttpGet("{aspNetRoleId}/asp-net-role-claim/{aspNetRoleClaimId}")]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GetAspNetRoleClaimsForAspNetRolesResponseDto))]
-        [ProducesResponseType(StatusCodes.Status404NotFound, Type = typeof(string))]
-        [ProducesResponseType(StatusCodes.Status400BadRequest, Type = typeof(string))]
-        public async Task<IActionResult> GetAspNetRoleClaimsForAspNetRolesDetailsAsync(string aspNetRolesId, int aspNetRoleClaimsId)
-        {
-            var response = await mediator.Send(new GetAspNetRoleClaimsForAspNetRolesDetailsQuery(aspNetRolesId, aspNetRoleClaimsId));
-            if (HandleResponseError(response, logger, "AspNetRole", $"AspNetRolesId: '{aspNetRolesId}', AspNetRoleClaimsId: '{aspNetRoleClaimsId}'") is {} responseError)
-                return responseError;
-            return Ok(response.Value);
-        }
     }
 }

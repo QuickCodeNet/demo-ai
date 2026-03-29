@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from portal_page_access_grant in _readContext.PortalPageAccessGrant
-                    where portal_page_access_grant.PermissionGroupName.Equals(permissionGroupName) && portal_page_access_grant.PortalPageDefinitionKey.Equals(portalPageDefinitionKey) && portal_page_access_grant.PageAction.Equals(pageAction)
-                    select portal_page_access_grant;
+                    from PPAG in _readContext.PortalPageAccessGrant
+                    where PPAG.PermissionGroupName.Equals(permissionGroupName) && PPAG.PortalPageDefinitionKey.Equals(portalPageDefinitionKey) && PPAG.PageAction.Equals(pageAction)
+                    select PPAG;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<PortalPageAccessGrantDto>
                 {

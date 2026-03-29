@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from asp_net_user_login in _readContext.AspNetUserLogin
-                    where asp_net_user_login.LoginProvider.Equals(loginProvider) && asp_net_user_login.ProviderKey.Equals(providerKey)
-                    select asp_net_user_login;
+                    from ANUL in _readContext.AspNetUserLogin
+                    where ANUL.LoginProvider.Equals(loginProvider) && ANUL.ProviderKey.Equals(providerKey)
+                    select ANUL;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<AspNetUserLoginDto>
                 {

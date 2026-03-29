@@ -1,1 +1,0 @@
-﻿SELECT * FROM [ApiMethodDefinitions] WHERE [ModelName] = @modelsName

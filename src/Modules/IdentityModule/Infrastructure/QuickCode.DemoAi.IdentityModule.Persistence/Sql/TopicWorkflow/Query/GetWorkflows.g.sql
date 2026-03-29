@@ -1,5 +1,5 @@
-﻿SELECT [Id], [KafkaEventsTopicName], [WorkflowContent] 
-FROM [TopicWorkflows] 
-WHERE [IsDeleted] = 0 
-	AND [KafkaEventsTopicName] = @PRM_TopicWorkflow_KafkaEventsTopicName 
-ORDER BY [Id] 
+﻿SELECT TW.[Id], TW.[KafkaEventsTopicName], TW.[WorkflowContent] 
+FROM [TopicWorkflows] TW 
+WHERE TW.[IsDeleted] = 0 
+	AND TW.[KafkaEventsTopicName] = @PRM_TopicWorkflow_KafkaEventsTopicName 
+ORDER BY TW.[Id] 

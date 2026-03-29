@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from column_type in _readContext.ColumnType
-                    where column_type.Id.Equals(id)
-                    select column_type;
+                    from CT in _readContext.ColumnType
+                    where CT.Id.Equals(id)
+                    select CT;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<ColumnTypeDto>
                 {

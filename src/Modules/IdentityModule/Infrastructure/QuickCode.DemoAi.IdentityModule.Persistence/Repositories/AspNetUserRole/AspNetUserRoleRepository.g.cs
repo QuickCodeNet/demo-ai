@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from asp_net_user_role in _readContext.AspNetUserRole
-                    where asp_net_user_role.UserId.Equals(userId) && asp_net_user_role.RoleId.Equals(roleId)
-                    select asp_net_user_role;
+                    from ANUR in _readContext.AspNetUserRole
+                    where ANUR.UserId.Equals(userId) && ANUR.RoleId.Equals(roleId)
+                    select ANUR;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<AspNetUserRoleDto>
                 {

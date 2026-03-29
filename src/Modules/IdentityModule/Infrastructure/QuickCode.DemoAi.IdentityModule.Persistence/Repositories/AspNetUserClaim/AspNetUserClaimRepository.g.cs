@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from asp_net_user_claim in _readContext.AspNetUserClaim
-                    where asp_net_user_claim.Id.Equals(id)
-                    select asp_net_user_claim;
+                    from ANUC in _readContext.AspNetUserClaim
+                    where ANUC.Id.Equals(id)
+                    select ANUC;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<AspNetUserClaimDto>
                 {

@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from table_combobox_setting in _readContext.TableComboboxSetting
-                    where table_combobox_setting.TableName.Equals(tableName)
-                    select table_combobox_setting;
+                    from TCS in _readContext.TableComboboxSetting
+                    where TCS.TableName.Equals(tableName)
+                    select TCS;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<TableComboboxSettingDto>
                 {

@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from api_method_definition in _readContext.ApiMethodDefinition
-                    where api_method_definition.Key.Equals(key)
-                    select api_method_definition;
+                    from AMD in _readContext.ApiMethodDefinition
+                    where AMD.Key.Equals(key)
+                    select AMD;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<ApiMethodDefinitionDto>
                 {

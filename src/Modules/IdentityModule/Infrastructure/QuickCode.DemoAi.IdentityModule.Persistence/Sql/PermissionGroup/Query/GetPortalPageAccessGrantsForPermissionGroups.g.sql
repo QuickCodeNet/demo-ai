@@ -1,1 +1,0 @@
-﻿SELECT * FROM [PortalPageAccessGrants] WHERE [PermissionGroupName] = @permissionGroupsName

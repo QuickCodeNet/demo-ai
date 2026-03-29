@@ -1,1 +1,0 @@
-﻿SELECT * FROM [AspNetUserClaims] WHERE [UserId] = @aspNetUsersId

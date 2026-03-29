@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from permission_group in _readContext.PermissionGroup
-                    where permission_group.Name.Equals(name)
-                    select permission_group;
+                    from PG in _readContext.PermissionGroup
+                    where PG.Name.Equals(name)
+                    select PG;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<PermissionGroupDto>
                 {

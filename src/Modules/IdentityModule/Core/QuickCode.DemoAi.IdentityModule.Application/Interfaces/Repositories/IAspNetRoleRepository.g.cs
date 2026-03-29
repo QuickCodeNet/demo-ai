@@ -22,9 +22,5 @@ namespace QuickCode.DemoAi.IdentityModule.Application.Interfaces.Repositories
     public partial interface IAspNetRoleRepository : IBaseRepository<AspNetRoleDto>
     {
         Task<RepoResponse<AspNetRoleDto>> GetByPkAsync(string id);
-        Task<RepoResponse<List<GetAspNetUserRolesForAspNetRolesResponseDto>>> GetAspNetUserRolesForAspNetRolesAsync(string aspNetRolesId);
-        Task<RepoResponse<GetAspNetUserRolesForAspNetRolesResponseDto>> GetAspNetUserRolesForAspNetRolesDetailsAsync(string aspNetRolesId, string aspNetUserRolesUserId);
-        Task<RepoResponse<List<GetAspNetRoleClaimsForAspNetRolesResponseDto>>> GetAspNetRoleClaimsForAspNetRolesAsync(string aspNetRolesId);
-        Task<RepoResponse<GetAspNetRoleClaimsForAspNetRolesResponseDto>> GetAspNetRoleClaimsForAspNetRolesDetailsAsync(string aspNetRolesId, int aspNetRoleClaimsId);
     }
 }

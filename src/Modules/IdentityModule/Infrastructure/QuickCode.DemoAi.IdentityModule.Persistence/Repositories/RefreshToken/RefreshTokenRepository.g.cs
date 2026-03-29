@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from refresh_token in _readContext.RefreshToken
-                    where refresh_token.Id.Equals(id)
-                    select refresh_token;
+                    from RT in _readContext.RefreshToken
+                    where RT.Id.Equals(id)
+                    select RT;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<RefreshTokenDto>
                 {

@@ -75,9 +75,9 @@ namespace QuickCode.DemoAi.IdentityModule.Persistence.Repositories
             return await ExecuteWithExceptionHandling("GetByPk", async () =>
             {
                 var result =
-                    from api_method_access_grant in _readContext.ApiMethodAccessGrant
-                    where api_method_access_grant.PermissionGroupName.Equals(permissionGroupName) && api_method_access_grant.ApiMethodDefinitionKey.Equals(apiMethodDefinitionKey)
-                    select api_method_access_grant;
+                    from AMAG in _readContext.ApiMethodAccessGrant
+                    where AMAG.PermissionGroupName.Equals(permissionGroupName) && AMAG.ApiMethodDefinitionKey.Equals(apiMethodDefinitionKey)
+                    select AMAG;
                 var response = await result.FirstOrDefaultAsync();
                 return response == null ? new RepoResponse<ApiMethodAccessGrantDto>
                 {

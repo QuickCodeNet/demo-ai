@@ -1,1 +1,0 @@
-﻿SELECT * FROM [Models] WHERE [ModuleName] = @modulesName
