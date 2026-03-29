@@ -1,0 +1,3 @@
+﻿DELETE FROM [CART_ITEMS] 
+WHERE [IsDeleted] = 0 
+	AND [ID] = @PRM_CART_ITEM_ID

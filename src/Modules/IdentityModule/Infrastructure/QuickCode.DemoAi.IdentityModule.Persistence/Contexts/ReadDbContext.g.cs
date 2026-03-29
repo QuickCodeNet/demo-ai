@@ -86,7 +86,7 @@ public partial class ReadDbContext : DbContext
 		modelBuilder.Entity<ApiMethodAccessGrant>()
 		.Property(b => b.IsActive)
 		.IsRequired()
-		.HasDefaultValue(true);
+		.HasDefaultValue(false);
 
 
 		var converterApiMethodAccessGrantModifiedBy = new ValueConverter<ModificationType, string>(
@@ -105,7 +105,7 @@ public partial class ReadDbContext : DbContext
 		modelBuilder.Entity<PortalPageAccessGrant>()
 		.Property(b => b.IsActive)
 		.IsRequired()
-		.HasDefaultValue(true);
+		.HasDefaultValue(false);
 
 
 		var converterPortalPageAccessGrantPageAction = new ValueConverter<PageActionType, string>(
@@ -128,7 +128,7 @@ public partial class ReadDbContext : DbContext
 		modelBuilder.Entity<KafkaEvent>()
 		.Property(b => b.IsActive)
 		.IsRequired()
-		.HasDefaultValue(true);
+		.HasDefaultValue(false);
 
 		modelBuilder.Entity<RefreshToken>()
 		.Property(b => b.CreatedDate)
@@ -139,17 +139,17 @@ public partial class ReadDbContext : DbContext
 		modelBuilder.Entity<RefreshToken>()
 		.Property(b => b.IsRevoked)
 		.IsRequired()
-		.HasDefaultValue(true);
+		.HasDefaultValue(false);
 
 		modelBuilder.Entity<AuditLog>()
 		.Property(b => b.IsChanged)
 		.IsRequired()
-		.HasDefaultValue(true);
+		.HasDefaultValue(false);
 
 		modelBuilder.Entity<AuditLog>()
 		.Property(b => b.IsSuccess)
 		.IsRequired()
-		.HasDefaultValue(true);
+		.HasDefaultValue(false);
 
 		modelBuilder.Entity<ColumnType>().Property(b => b.IsDeleted).IsRequired().HasDefaultValue(false);
 		modelBuilder.Entity<ColumnType>().HasQueryFilter(r => !r.IsDeleted);

@@ -1,0 +1,5 @@
+﻿SELECT COUNT(*) 
+FROM [ORDERS] O 
+WHERE O.[IsDeleted] = 0 
+	AND O.[TOTAL_AMOUNT] > '1000' 
+ORDER BY  

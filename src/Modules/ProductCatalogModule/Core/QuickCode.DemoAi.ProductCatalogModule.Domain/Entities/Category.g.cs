@@ -29,8 +29,8 @@ public partial class Category : BaseSoftDeletable, IAuditableEntity
 	[Column("IS_ACTIVE")]
 	public bool IsActive { get; set; }
 	
-	[InverseProperty(nameof(Product.Category))]
-	public virtual ICollection<Product> Products { get; } = new List<Product>();
+	[InverseProperty(nameof(ProductCategory.Category))]
+	public virtual ICollection<ProductCategory> ProductCategories { get; } = new List<ProductCategory>();
 
 }
 

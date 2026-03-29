@@ -1,0 +1,5 @@
+﻿SELECT COUNT(*) 
+FROM [PRODUCTS] P 
+WHERE P.[IsDeleted] = 0 
+	AND P.[STOCK_QUANTITY] < '10' 
+ORDER BY P.[ID] 

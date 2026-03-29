@@ -1,4 +1,0 @@
-﻿UPDATE [CATEGORIES] 
-	SET [IS_ACTIVE] = 0 
-WHERE [IsDeleted] = 0 
-	AND [ID] = @PRM_CATEGORY_ID
